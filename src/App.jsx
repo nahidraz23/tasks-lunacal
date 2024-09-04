@@ -3,6 +3,9 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import nextButton from './assets/images/nextButton.svg'
 import prevButton from './assets/images/prevButton.svg'
 import image from './assets/images/image.svg'
+import questionSign from './assets/images/questionSign.svg'
+import squares from './assets/images/squares.svg'
+import verticalLine from './assets/images/verticalLine.svg'
 // import 'react-tabs/style/react-tabs.css';
 
 function App() {
@@ -16,7 +19,10 @@ function App() {
         </div>
         {/* right div */}
         <div className="w-full flex flex-col justify-center mx-14">
-          <div className="bg-[#363C43] shadow-[5.67px_5.67px_3.78px_0px_rgba(0,0,0,0.3)] rounded-3xl">
+          <div className="bg-[#363C43] shadow-[5.67px_5.67px_3.78px_0px_rgba(0,0,0,0.3)] rounded-3xl relative">
+            <img src={questionSign} alt="" className="absolute top-5 left-4" />
+            <img src={squares} alt="" className="absolute top-32 left-4" />
+            <img src={verticalLine} alt="" className="absolute top-20 right-4" />
             <div className="mx-14">
               <Tabs>
                 <TabList className={"flex justify-between bg-black rounded-3xl p-2"}>
@@ -57,7 +63,9 @@ function App() {
           </div>
           {/* divider */}
           <hr className="my-6 mx-20 border-2 border-[#363C43] rounded-3xl custom-glass-effect" />
-          <div className="bg-[#363C43] shadow-[5.67px_5.67px_3.78px_0px_rgba(0,0,0,0.3)] rounded-3xl">
+          <div className="bg-[#363C43] shadow-[5.67px_5.67px_3.78px_0px_rgba(0,0,0,0.3)] rounded-3xl relative">
+            <img src={questionSign} alt="" className="absolute top-5 left-4" />
+            <img src={squares} alt="" className="absolute top-32 left-4" />
             <div className="flex items-center justify-between py-5 mx-14">
               <div>
                 <h1 className="bg-black text-lg font-medium text-white px-6 py-3 rounded-2xl">Gallery</h1>

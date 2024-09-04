@@ -43,7 +43,7 @@ body {
   }
 
   .custom-drop-shadow {
-    filter: drop-shadow(4px 5px 10px #101213) drop-shadow(-5px -3px 10px #96BEE7);
+    filter: drop-shadow(4px 5px 10px #101213) drop-shadow(-5px -3px 10px #50769c);
   }
 }
 
