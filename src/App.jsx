@@ -17,13 +17,15 @@ function App() {
         <div className="w-full">
 
         </div>
+
         {/* right div */}
         <div className="w-full flex flex-col justify-center mx-14">
+          {/* about me widgets top bar */}
           <div className="bg-[#363C43] shadow-[5.67px_5.67px_3.78px_0px_rgba(0,0,0,0.3)] rounded-3xl relative">
             <img src={questionSign} alt="" className="absolute top-5 left-4" />
             <img src={squares} alt="" className="absolute top-32 left-4" />
             <img src={verticalLine} alt="" className="absolute top-20 right-4" />
-            <div className="mx-14">
+            <div className="mx-14 h-72">
               <Tabs>
                 <TabList className={"flex justify-between bg-black rounded-3xl p-2"}>
                   <Tab >About Me</Tab>
@@ -42,30 +44,26 @@ function App() {
                 </TabPanel>
                 <TabPanel >
                   <h2>
-                    Hello! I’m Dave, your sales rep here from Salesforce. I’ve been working at this awesome company for 3 years now.
-                  </h2>
-                  <br />
-                  <h2>
-                    I was born and raised in Albany, NY& have been living in Santa Carla for the past 10 years my wife Tiffany and my 4 year old twin daughters- Emma and Ella. Both of them are just starting school, so my calender is usually blocked between 9-10 AM. This is a...
+                    I was born and raised in Albany, NY, and have been living in Santa Carla for the past 10 years. During this time, I've built a life here with my wife, Tiffany, and our 4-year-old twin daughters, Emma and Ella. As they are just starting school, my mornings are particularly busy, and my schedule is often blocked between 9-10 AM to accommodate their needs. Balancing family life with professional commitments has taught me the importance of effective time management and flexibility.
                   </h2>
                 </TabPanel>
                 <TabPanel>
                   <h2>
-                    Hello! I’m Dave, your sales rep here from Salesforce. I’ve been working at this awesome company for 3 years now.
-                  </h2>
-                  <br />
-                  <h2>
-                    I was born and raised in Albany, NY& have been living in Santa Carla for the past 10 years my wife Tiffany and my 4 year old twin daughters- Emma and Ella. Both of them are just starting school, so my calender is usually blocked between 9-10 AM. This is a...
+                    Dave has shown remarkable dedication and adaptability in balancing his professional and personal life. Born and raised in Albany, NY, and now a long-term resident of Santa Carla for the past 10 years, Dave has demonstrated strong time management skills, especially as a devoted husband to his wife, Tiffany, and a caring father to his 4-year-old twin daughters, Emma and Ella. With both daughters just starting school, he has seamlessly adjusted his schedule to ensure his calendar is blocked between 9-10 AM, reflecting his commitment to family and professional responsibilities.
                   </h2>
                 </TabPanel>
               </Tabs>
             </div>
           </div>
+
           {/* divider */}
           <hr className="my-6 mx-20 border-2 border-[#363C43] rounded-3xl custom-glass-effect" />
+
+          {/* gallery widget */}
           <div className="bg-[#363C43] shadow-[5.67px_5.67px_3.78px_0px_rgba(0,0,0,0.3)] rounded-3xl relative">
             <img src={questionSign} alt="" className="absolute top-5 left-4" />
             <img src={squares} alt="" className="absolute top-32 left-4" />
+            {/* gallery widget top bar */}
             <div className="flex items-center justify-between py-5 mx-14">
               <div>
                 <h1 className="bg-black text-lg font-medium text-white px-6 py-3 rounded-2xl">Gallery</h1>
@@ -93,8 +91,10 @@ function App() {
               <img src={image} alt="" />
             </div>
           </div>
+
           {/* divider */}
           <hr className="my-6 mx-20  border-2 border-[#363C43] rounded-3xl custom-glass-effect" />
+
         </div>
       </div>
     </>
