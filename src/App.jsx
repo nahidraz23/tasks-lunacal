@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom"
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import nextButton from './assets/images/nextButton.svg'
 import prevButton from './assets/images/prevButton.svg'
@@ -6,7 +5,6 @@ import image from './assets/images/image.svg'
 import questionSign from './assets/images/questionSign.svg'
 import squares from './assets/images/squares.svg'
 import verticalLine from './assets/images/verticalLine.svg'
-// import 'react-tabs/style/react-tabs.css';
 
 function App() {
 
