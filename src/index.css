@@ -13,33 +13,63 @@ body {
   margin: 0 auto;
 }
 
+@layer utilities {
+  .custom-glass-effect {
+    border-radius: 2.459px;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 0.05) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(40, 40, 40, 0.1) 0%,
+        rgba(248, 248, 248, 0.1) 100%
+      );
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.33);
+    backdrop-filter: blur(4.918px);
+  }
+  .custom-add-button {
+    border-radius: 104px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: -0.5px -0.5px 6.9px 0px rgba(255, 255, 255, 0.25),
+      9px 10px 7.1px 0px rgba(0, 0, 0, 0.4),
+      0px 0px 48.906px 0px rgba(255, 255, 255, 0.05) inset,
+      0px 3.26px 3.26px 0px rgba(255, 255, 255, 0.15) inset;
+    backdrop-filter: blur(52.27996826171875px);
+  }
+  .custom-gradient-fill {
+    background: linear-gradient(120deg, #303439 12.4%, #161718 80.96%);
+  }
+
+  .custom-drop-shadow {
+    filter: drop-shadow(4px 5px 10px #101213) drop-shadow(-5px -3px 10px #96BEE7);
+  }
+}
+
 .react-tabs {
   -webkit-tap-highlight-color: transparent;
-  color: #A3ADB2;
+  color: #a3adb2;
   padding-top: 17px;
 }
 
 .react-tabs__tab-list {
   border-bottom: 1px solid #aaa;
   margin: 0 0 10px;
-  /* padding: 10px; */
   background-color: black;
   border-radius: 30px;
-  
 }
 
 .react-tabs__tab {
   display: inline-block;
   position: relative;
   list-style: none;
-  padding: 10px 24px;
+  padding: 10px 50px;
   cursor: pointer;
-  /* margin-right: 20px; */
-  /* background-color: black; */
 }
 
 .react-tabs__tab--selected {
-  background: #28292F;
+  background: #28292f;
   color: white;
   border-radius: 20px;
   font-weight: 500;
@@ -56,17 +86,17 @@ body {
 }
 
 .react-tabs__tab:focus:after {
-  content: '';
+  content: "";
   position: absolute;
   height: 5px;
   left: -4px;
   right: -4px;
   bottom: -5px;
-  /* background: #fff; */
 }
 
 .react-tabs__tab-panel {
   display: none;
+  padding: 10px 0;
 }
 
 .react-tabs__tab-panel--selected {
